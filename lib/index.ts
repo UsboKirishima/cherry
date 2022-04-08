@@ -18,6 +18,8 @@ const cherry = async (): Promise<void | any> => {
     await print_ascii();
 
     let urls = await wh_url(webhooks);
+
+    //console.log(urls);
 }
 
 const print_ascii = async (): Promise<void> => {
@@ -76,7 +78,7 @@ const req_threads = async (): Promise<number> => {
 
 const wh_url = async (wh: number) => {
     let url: string[] = [];
-    for (let i = 0; i < wh; i++) {
+    for (let i = 1; i < wh + 1; i++) {
         let rl = readline.createInterface({ input, output });
         let answer: string = await rl.question(`[?] Insert the webhook url(${i}): `.blue);
         if (typeof answer !== 'string') {
