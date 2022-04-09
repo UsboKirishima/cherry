@@ -11,8 +11,10 @@
     "build:watch": "tsc --watch"
   },
   "dependencies": {
+    "@types/axios": "^0.14.0",
     "@types/colors": "^1.2.1",
     "@types/node": "^17.0.23",
+    "axios": "^0.26.1",
     "colors": "^1.4.0"
   }
 }
